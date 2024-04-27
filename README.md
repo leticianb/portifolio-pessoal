@@ -1,2 +1,2 @@
-# portifolio
-Portifolio pessoal
+# Portifólio
+Desenvolvimento do meu portifolio pessoal
