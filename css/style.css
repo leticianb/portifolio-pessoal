@@ -159,3 +159,31 @@ span {
     border-radius: 50%;
     box-shadow: 0 0 90px var(--main-color);
 }
+
+.home-img img:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 90px var(--main-color));
+}
+
+.home-content p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 30%;
+    color: var(--txt-color);
+    text-decoration: none;
+    /* filter: drop-shadow(0 0 5px var(--main-color)); */
+    cursor: pointer;
+}
