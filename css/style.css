@@ -51,6 +51,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    opacity: 0.9;
 }
 
 .logo {
