@@ -136,7 +136,7 @@ section {
     padding-top: 5rem;
 }
 
-.home .home-content h1 {
+.home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.1;
@@ -145,6 +145,13 @@ section {
 span {
     color: var(--main-color);
 }
+
+
+/* .home h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+} */
 
 
 /* .home-img {
@@ -164,6 +171,7 @@ span {
 .home-img img:hover {
     transform: scale(1.01);
     filter: drop-shadow(0 0 90px var(--main-color));
+    transition: 0.5s ease;
 }
 
 .home-content p {
@@ -178,11 +186,11 @@ span {
     width: 4rem;
     height: 4rem;
     margin: 2.5rem 1.5rem 2.5rem 0;
-    background: var(--main-color);
+    background: var(--bg-color);
     border: 0.2rem solid var(--main-color);
     font-size: 2rem;
     border-radius: 30%;
-    color: var(--txt-color);
+    color: var(--main-color);
     text-decoration: none;
     /* filter: drop-shadow(0 0 5px var(--main-color)); */
     cursor: pointer;
@@ -191,8 +199,9 @@ span {
 .social-icon a:hover {
     color: white;
     transform: scale(1)translateY(-3px);
-    /* background: var(--second-bg-color); */
+    background: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
+    transition: 0.3s ease;
 }
 
 .btn {
@@ -211,8 +220,78 @@ span {
 }
 
 .btn:hover {
-    transform: scale(1.03);
+    transform: scale(1.07);
     background-color: var(--main-color);
     color: var(--txt-color);
     box-shadow: 0 0 25px var(--main-color);
+}
+
+.typing-text {
+    font-size: 2.6rem;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: '';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: '';
+    background: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8;
+    animation: cursor 0.6s infinite, typing 20s steps(14, end) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid var(--main-color);
+    }
+}
+
+@keyframes words {
+    0%,
+    50% {
+        content: 'Desenvolvedora Full Stack';
+    }
+    51%,
+    100% {
+        content: 'Estudante universitária';
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
 }
