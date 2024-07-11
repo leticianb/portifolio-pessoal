@@ -170,7 +170,7 @@ span {
 
 .home-img img:hover {
     transform: scale(1.01);
-    filter: drop-shadow(0 0 90px var(--main-color));
+    filter: drop-shadow(0 0 40px var(--main-color));
     transition: 0.5s ease;
 }
 
@@ -251,6 +251,7 @@ span {
     border-left: 3px solid var(--bg-color);
     right: -6px;
     animation: cursor 0.8s infinite, typing 20s steps(20) infinite;
+    white-space: nowrap;
 }
 
 @keyframes cursor {
@@ -294,4 +295,69 @@ span {
     85% {
         width: calc(100% + 8px);
     }
+}
+
+@media(max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        /* display: none; */
+        width: 50vw;
+        height: 50vw;
+        margin-top: 4rem;
+    }
+}
+
+.projects {
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 6px rgb(36, 36, 36);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 6rem;
+}
+
+.project-box {
+    background-color: var(--main-color);
+    height: 30rem;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
+.project-box:hover {
+    background: transparent;
+    /* box-shadow: inset 0 0 0 0.1rem var(--main-color); */
+    transform: scale(1.03);
+    box-shadow: 0 0 30px var(--main-color);
+    transition: 0.9 ease;
+    color: var(--main-color);
+}
+
+.project-box p,
+.project-box h4 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 3rem;
+    font-size: 1.7rem;
+}
+
+.project-box p {
+    font-weight: 300;
 }
