@@ -189,7 +189,7 @@ span {
     background: var(--bg-color);
     border: 0.2rem solid var(--main-color);
     font-size: 2rem;
-    border-radius: 30%;
+    border-radius: 1.5rem;
     color: var(--main-color);
     text-decoration: none;
     /* filter: drop-shadow(0 0 5px var(--main-color)); */
@@ -375,11 +375,61 @@ span {
     margin: auto;
 }
 
-@media(max-width:895px) {
+.heading {
+    text-align: center;
+    font-size: 4.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+@media(max-width:768px) {
     .projects h2 {
         margin-bottom: 3rem;
     }
     .projects-container {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.skills {
+    background: var(--bg-color);
+}
+
+.skills .container {
+    background: rgba(17, 125, 167, 0.205);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    margin-bottom: 2rem;
+    padding: 2px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    box-shadow: 4px 6px 15px var(--main-color);
+    transition: 0.3 ease;
+    font-size: 1.4rem;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 4px 6px 15px var(--main-color);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
