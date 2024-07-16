@@ -507,12 +507,12 @@ span {
     border: 4px solid var(--main-color);
     top: 15px;
     border-radius: 50%;
-    z-index: 100;
+    z-index: 99;
     font-size: 1.7rem;
     text-align: center;
     font-weight: 600;
     font-family: 'Font Awesome 5 Free';
-    color: rgb(20, 20, 20);
+    color: rgb(0, 0, 0);
 }
 
 .educacao .left {
@@ -574,12 +574,18 @@ span {
     padding-bottom: 1rem;
 }
 
-.educacao .content .desc h3 {
-    margin-left: 1.5rem;
+.educacao .content .tag h3 {
+    font-size: 1.9rem;
     font-weight: 600;
+    color: rgb(17, 17, 17);
 }
 
 .educacao .content .desc p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
+    color: var(--bg-color);
+}
+
+.educacao .content .desc span {
+    color: rgb(17, 17, 17);
 }
