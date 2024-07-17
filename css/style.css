@@ -90,7 +90,7 @@ html::-webkit-scrollbar-thumb {
     display: none;
 } */
 
-@media (max-width: 995px) {
+@media screen and (max-width:768px) {
     /* .menu-icone {
         display: block;
     } */
@@ -299,27 +299,25 @@ span {
     }
 }
 
-@media(max-width: 1000px) {
-    .home {
-        gap: 4rem;
-    }
-}
-
-@media(max-width: 995px) {
+@media screen and (max-width:768px) {
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
+        gap: 4rem;
     }
     .home .home-content h3 {
-        font-size: 2.4rem;
+        font-size: 2rem;
+    }
+    .home .home-content p {
+        font-size: 1.5rem;
     }
     .home .home-content h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .home-img img {
         /* display: none; */
-        width: 50vw;
-        height: 50vw;
+        width: 45vw;
+        height: 45vw;
         margin-top: 4rem;
     }
 }
@@ -385,7 +383,7 @@ span {
     /* -webkit-text-stroke: 1px black; */
 }
 
-@media(max-width:768px) {
+@media screen and (max-width:768px) {
     .projects h2 {
         margin-bottom: 3rem;
     }
@@ -451,20 +449,16 @@ span {
     margin-left: 0.5rem;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
     .skills .container {
-        margin: 0;
         padding: 0;
+        margin-top: 5px;
     }
     .skills .container .row {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 1rem;
         padding: 2rem 0.2rem;
         gap: 1rem;
-    }
-    .skills .container {
-        margin-top: 5px;
-        width: 100%;
     }
 }
 
