@@ -584,3 +584,36 @@ span {
 .educacao .content .desc span {
     color: rgb(17, 17, 17);
 }
+
+@media screen and (max-width:768px) {
+    .educacao .timeline::after {
+        left: 10%
+    }
+    .educacao .right {
+        left: 10%;
+    }
+    .educacao .left {
+        left: 10%;
+    }
+    .educacao .left::before {
+        content: '';
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid var(--main-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--main-color) transparent transparent;
+    }
+    .educacao .left::after {
+        left: -16px;
+    }
+    .educacao .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 80%;
+    }
+}
