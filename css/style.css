@@ -393,6 +393,12 @@ span {
     /* .home-content p {
         margin-top: 3rem;
     } */
+    .project-info p {
+        font-size: 1;
+    }
+    .project-info h4 {
+        font-size: 2rem;
+    }
 }
 
 .skills {
@@ -446,19 +452,31 @@ span {
 .skills .container .bar .info span {
     font-size: 2rem;
     font-weight: 500;
-    margin-left: 0.5rem;
 }
 
 @media screen and (max-width:768px) {
     .skills .container {
         padding: 0;
         margin-top: 5px;
+        width: 100%;
     }
     .skills .container .row {
         grid-template-columns: repeat(2, 1fr);
         margin: 1rem;
         padding: 2rem 0.2rem;
         gap: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .skills .container .bar {
+        width: 30%;
+        gap: 0.5rem;
+    }
+    .skills .container .bar .info img {
+        width: 3rem;
+    }
+    .skills .container .bar .info span {
+        font-size: 1.4rem;
     }
 }
 
@@ -615,5 +633,8 @@ span {
         position: relative;
         background-color: inherit;
         width: 80%;
+    }
+    .heading {
+        font-size: 3rem;
     }
 }
