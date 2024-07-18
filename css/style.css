@@ -684,6 +684,7 @@ span {
 .obrigada {
     font-size: 8rem;
     color: var(--main-color);
+    z-index: 100;
 }
 
 #voltar {
@@ -691,4 +692,82 @@ span {
     justify-content: center;
     align-items: center;
     gap: 0.7rem;
+}
+
+.footer {
+    background: var(--main-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+.footer .social a {
+    font-size: 2.8rem;
+    color: white;
+    border: 2px solid white;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2)translateY(-2px);
+    background: white;
+    color: var(--main-color);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--txt-color);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px) {
+    .footer .social a {
+        font-size: 1.7rem;
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+    .copyright {
+        font-size: 0.3rem;
+    }
+    .footer ul {
+        font-size: 1.4rem;
+    }
+    .obrigada {
+        font-size: 4rem;
+        margin: 0 1rem;
+    }
 }
