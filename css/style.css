@@ -677,9 +677,18 @@ span {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .obrigada {
     font-size: 8rem;
     color: var(--main-color);
+}
+
+#voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
 }
