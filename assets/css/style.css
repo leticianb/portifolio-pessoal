@@ -113,9 +113,6 @@ html::-webkit-scrollbar-thumb {
     /* .menu-icone {
         display: block;
     } */
-    .mode {
-        margin-right: 2rem;
-    }
     .navbar {
         position: absolute;
         top: 100%;
