@@ -32,6 +32,7 @@ html[data-theme='light'] .mode {
     color: white;
     font-size: 2.5rem;
     margin: 0 1.5rem;
+    cursor: pointer;
 }
 
 html {
