@@ -529,6 +529,18 @@ span {
     width: 50%;
 }
 
+.educacao .btn {
+    text-align: center;
+    display: block;
+    margin: 6rem auto;
+    width: 30%;
+    background: var(--second-bg-color);
+}
+
+.educacao .btn:hover {
+    background: var(--main-color);
+}
+
 .educacao .container::after {
     content: '\f501';
     position: absolute;
