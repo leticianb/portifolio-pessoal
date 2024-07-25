@@ -354,7 +354,8 @@ span {
     gap: 6rem;
 }
 
-.projects-container a {
+.projects-container a,
+.projects-container a:visited {
     text-decoration: none;
 }
 
